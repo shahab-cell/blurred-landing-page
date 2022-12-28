@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Welcome | Broskis</title>
+  </head>
+  <body>
+    <div class="showcase">
+      <div class="content">
+        <img src="./images/bros-02.png" class="logo" alt="Logo" />
+        <div>
+          <h1 class="title">Welcome to Broskis</h1>
+          <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+            cupiditate atque! Temporibus dolor inventore iure culpa, at aliquid
+            labore placeat!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="services">
+      <div class="container grid-3 center">
+        <div>
+          <i class="fab fa-youtube fa-3x"></i>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nam?
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
+          <h3>Cources</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nam?
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-briefcase fa-3x"></i>
+          <h3>Projects</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nam?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about bg-light">
+      <div class="container">
+        <div class="grid-2">
+          <div class="center">
+            <i class="fas fa-laptop-code fa-10x"></i>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              dignissimos adipisci tenetur ratione excepturi, necessitatibus
+              aspernatur, at eveniet expedita sapiente accusamus molestiae quod.
+              Voluptatem temporibus saepe, minima, at reiciendis aliquam minus
+              laborum distinctio, voluptatibus placeat sit natus. Laboriosam,
+              est magnam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="center bg-dark">
+      <p>Broskis &copy; <span class="dynamic_date"></span></p>
+    </footer>
+
+    <script>
+      year = document.querySelector(".dynamic_date");
+
+      function crnt_year() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, "0");
+        var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        var yyyy = today.getFullYear();
+
+        // today = mm + "/" + dd + "/" + yyyy;
+        return yyyy;
+      }
+
+      year.innerHTML = crnt_year();
+    </script>
+  </body>
+</html>
